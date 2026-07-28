@@ -1,4 +1,3 @@
-// frontend/src/components/home/BeforeAfterSection.jsx
 import { ArrowRight, Sparkles, ArrowRightLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -12,10 +11,7 @@ import case7 from "../../../assets/gallery/case-7.jpg";
 import case8 from "../../../assets/gallery/case-8.jpg";
 import case9 from "../../../assets/gallery/case-9.jpg";
 
-// Each case has its own before and after image
-// case-1 BEFORE | case-2 AFTER
-// case-3 BEFORE | case-4 AFTER
-// etc.
+
 const cases = [
   {
     id: "case-1",
