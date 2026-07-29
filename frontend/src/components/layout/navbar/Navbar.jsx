@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../../assets/images/logo/logo.png";
-import Container from "../../common/Container";
-import Button from "../../ui/Button";
+import Container from "../../common/container/Container";  // ← Fixed path
+import Button from "../../ui/Button/Button"; 
 
 const Navbar = () => {
   return (
