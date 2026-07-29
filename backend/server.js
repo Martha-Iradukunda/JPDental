@@ -58,13 +58,15 @@ app.get("/api/test", (req, res) => {
 // Your other API routes here
 
 // ===== ADD THIS FOR LOCAL DEVELOPMENT =====
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 
-// Only listen if this file is run directly (not imported)
-if (process.env.NODE_ENV !== 'production') {
-  app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
-  });
-}
+// // Only listen if this file is run directly (not imported)
+// if (process.env.NODE_ENV !== 'production') {
+//   app.listen(PORT, () => {
+//     console.log(`🚀 Server running on http://localhost:${PORT}`);
+//   });
+// }
 
-export default app;
+// export default app;
+module.exports = app;
+
