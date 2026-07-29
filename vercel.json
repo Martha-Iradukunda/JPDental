@@ -9,13 +9,21 @@
     },
     "backend": {
       "root": "backend",
-      "framework": "express",
-      "routes": [
-        {
-          "src": "/api/(.*)",
-          "dest": "server.js"
-        }
-      ]
+      "framework": "express"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/backend/server.js"
+    },
+    {
+      "src": "/",
+      "dest": "/frontend/dist/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/dist/$1"
+    }
+  ]
 }
