@@ -7,3 +7,6 @@ Thumbs.db
 
 # GitHub
 *.log
+
+dist/
+build/
